@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIMASTA - Universitas Negeri Gorontalo</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="navbar">
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="logo.jpg" class="logo-img">
+      <h1>HIMASTA</h1>
+    </div>
+
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tentang">Lihat Kami</a></li>
+      <li><a href="#divisi">Divisi</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div> <!-- background foto / slideshow -->
+  <div class="hero-overlay"></div> <!-- overlay gelap agar teks terlihat -->
+  <div class="hero-content">
+    <h1>SELAMAT DATANG DI WEBSITE</h1>
+    <img src="ung.png" alt="Logo UNG" class="hero-logo">
+    <h1>Himpunan Mahasiswa Statistika</h1>
+    <p>Universitas Negeri Gorontalo</p>
+  </div>
+</section>
+
+
+
+
+<!-- VISI MISI -->
+<section class="section light reveal" id="tentang">
+<div class="container center">
+<h2>Visi</h2>
+<p>Menjadi organisasi mahasiswa statistika yang unggul, inovatif dan berintegritas.</p>
+
+<h2 class="mt">Misi</h2>
+<ul class="misi">
+<li>- Meningkatkan kualitas akademik mahasiswa.</li>
+<li>- Mengembangkan kepemimpinan dan soft skill.</li>
+<li>- Mendorong prestasi dan kolaborasi nasional.</li>
+</ul>
+</div>
+</section>
+
+<!-- PENGURUS INTI -->
+<section class="section reveal">
+  <div class="container">
+    <h2 class="center">Pengurus Inti</h2>
+
+    <div class="card-grid">
+
+      <div class="card anggota" onclick="openModal('images/ketua.jpg','PUTRI KARTIKA ABDULLAH','Ketua Himpunan')">
+        <img src="images/ketua.jpg" alt="Ketua">
+        <h3>PUTRI KARTIKA ABDULLAH</h3>
+        <p>Ketua Himpunan</p>
+      </div>
+
+      <div class="card anggota" onclick="openModal('imam.jpeg','Nur Imam Mohammad','Sekretaris')">
+        <img src="imam.jpeg" alt="Sekretaris">
+        <h3>Nur Imam Mohammad</h3>
+        <p>Sekretaris</p>
+      </div>
+
+      <div class="card anggota" onclick="openModal('aru,m.jpg','Arum Kusmawaty Yusuf','Bendahara')">
+        <img src="arum.jpg" alt="Bendahara">
+        <h3>Arum Kusmawaty Yusuf</h3>
+        <p>Bendahara</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DIVISI -->
+<section class="section light" id="divisi">
+  <div class="container">
+    <h2 class="center">Divisi HIMASTA</h2>
+
+    <!-- Divisi Kerohanian -->
+    <div class="divisi-card reveal">
+      <h1>Divisi 1</h1>
+      <h2>Kerohanian</h2>
+
+      <div class="anggota-grid">
+        <div class="anggota" onclick="openModal('nifa.jpg','Ar’rahma Trihanifa Mooduto','Ketua Divisi')">
+          <img src="nifa.jpg">
+          <h4>Ar’rahma Trihanifa Mooduto</h4>
+          <p>Ketua Divisi</p>
+        </div>
+        <div class="anggota" onclick="openModal('intan.jpg',' Intan Maulidya Moito','Sekretaris')">
+          <img src="intan.jpg">
+          <h4> Intan Maulidya Moito</h4>
+          <p>Sekretaris</p>
+        </div>
+        <div class="anggota" onclick="openModal('lailaa.jpg',' Laila Fauzizah Ramadhani','Anggota')">
+          <img src="laila.jpg">
+          <h4>Laila Fauzizah Ramadhani</h4>
+          <p>Anggota</p>
+        </div>
+      </div>
+
+      <ul class="proker">
+        <li> --- </li>
+        <li> --- </li>
+        <li> --- </li>
+      </ul>
+    </div>
+
+    <!-- Divisi 2 -->
+    <div class="divisi-card reveal">
+      <h1>Divisi 2</h1>
+      <h2>Pengembangan IPTEK (Ilmu Pengetahuan dan Teknologi)</h2>
+      <div class="anggota-grid">
+        <div class="anggota" onclick="openModal('vinza.jpg','Vinza Mikayla Hamza','Ketua Divisi')">
+          <img src="vinza.jpg">
+          <h4>Vinza Mikayla Hamza</h4>
+          <p>Ketua Divisi</p>
+        </div>
+        <div class="anggota" onclick="openModal('ain.jpg','Nur Ain Lasimpala','Sekretaris')">
+          <img src="ain.jpg">
+          <h4>Nur Ain Lasimpala</h4>
+          <p>Sekretaris</p>
+        </div>
+        <div class="anggota" onclick="openModal('dinda.jpg',' Adinda Saputri Hamim','Anggota')">
+          <img src="dinda.jpg">
+          <h4> Adinda Saputri Hamim</h4>
+          <p>Anggota</p>
+        </div>
+        <div class="anggota" onclick="openModal('taslom.jpg',' Taslim Haipi','Anggota')">
+          <img src="taslim.jpg">
+          <h4>Taslim Haipi</h4>
+          <p>Anggota</p>
+        </div>
+      </div>
+
+     <ul class="proker">
+        <li> --- </li>
+        <li> --- </li>
+        <li> --- </li>
+      </ul>
+    </div>
+
+    <!-- Divisi 3 -->
+    <div class="divisi-card reveal">
+      <h1>Divisi 3</h1>
+      <h2>Potensi Mahasiswa</h2>
+      <div class="anggota-grid">
+        <div class="anggota" onclick="openModal('images/nasar.jpg','Moh. Nasar Daharjo','Ketua Divisi')">
+          <img src="images/nasar.jpg">
+          <h4>Moh. Nasar Daharjo</h4>
+          <p>Ketua Divisi</p>
+        </div>
+        <div class="anggota" onclick="openModal('images/sri.jpg','Sri Febriyanti Karim','Sekretaris')">
+          <img src="images/sri.jpg">
+          <h4>Sri Febriyanti Karim</h4>
+          <p>Sekretaris</p>
+        </div>
+        <div class="anggota" onclick="openModal('barok.jpg','Muhammad Rizqi Mubaroq Rauf','Anggota')">
+          <img src="barok.jpg">
+          <h4>Muhammad Rizqi Mubaroq Rauf</h4>
+          <p>Anggota</p>
+        </div>
+        <div class="anggota" onclick="openModal('anya.jpg','Yuliana B. Bayahu','Anggota')">
+          <img src="anya.jpg">
+          <h4>Yuliana B. Bayahu</h4>
+          <p>Anggota</p>
+        </div>
+      </div>
+
+      <ul class="proker">
+        <li> --- </li>
+        <li> --- </li>
+        <li> --- </li>
+      </ul>
+    </div>
+
+    <!-- Divisi 4 -->
+    <div class="divisi-card reveal">
+      <h1>Divisi 4</h1>
+      <h2>Pengabdian Pada Masyarakat </h2>
+      <div class="anggota-grid">
+        <div class="anggota" onclick="openModal('nabila.jpg','Rofiiah Nabiila Lahay','Ketua Divisi')">
+          <img src="nabila.jpg">
+          <h4>Rofiiah Nabiila Lahay</h4>
+          <p>Ketua Divisi</p>
+        </div>
+        <div class="anggota" onclick="openModal('luna.jpg','Fadlun Panigoro','Sekretaris')">
+          <img src="luna.jpg">
+          <h4>Fadlun Panigoro</h4>
+          <p>Sekretaris</p>
+        </div>
+        <div class="anggota" onclick="openModal('amat.jpg','Rahmat Maulana Umar','Anggota')">
+          <img src="amat.jpg">
+          <h4>Rahmat Maulana Umar</h4>
+          <p>Anggota</p>
+        </div>
+      </div>
+
+      <ul class="proker">
+        <li> --- </li>
+        <li> --- </li>
+        <li> --- </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALERI MODERN -->
+<section class="section light" id="galeri">
+  <div class="container">
+    <h2 class="center">Dokumentasi Kegiatan HIMASTA</h2>
+
+    <!-- FILTER BUTTON -->
+    <div class="gallery-filter">
+      <button class="filter-btn active" onclick="filterGallery('all')">Semua</button>
+      <button class="filter-btn" onclick="filterGallery('seminar')">Rapat Kerja</button>
+      <button class="filter-btn" onclick="filterGallery('lomba')">Bersama</button>
+      <button class="filter-btn" onclick="filterGallery('pengabdian')"> ??? </button>
+    </div>
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow-container">
+      <img id="slide-img" src="bg1.jpg">
+    </div>
+
+    <!-- GRID -->
+    <div class="gallery-grid">
+
+      <div class="gallery-item seminar">
+        <img src="raker.jpg" onclick="openModal('raker.jpg','Rapat Kerja HIMASTA 2026')">
+      </div>
+
+      <div class="gallery-item lomba">
+        <img src="bg1.jpg" onclick="openModal('bg1.jpg','Foto Bersama Selesai Rapat')">
+      </div>
+      <div class="gallery-item lomba">
+        <img src="bg2.jpg" onclick="openModal('bg2.jpg','Foto Bersama Selesai MUBES HIMASTA')">
+      </div>
+
+      <div class="gallery-item pengabdian">
+        <img src="2.jpg" onclick="openModal('galeri3.jpg','Pengabdian Literasi Data Sekolah')">
+      </div>
+
+      <div class="gallery-item seminar">
+        <img src=".jpg" onclick="openModal('galeri4.jpg','Workshop Data Science HIMASTA')">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="section" id="kontak">
+  <div class="container center">
+    <h2>Kontak Kami</h2>
+    <li>Klik di bawah ini</li>
+    <div class="contact-cards">
+
+      <div class="contact-card">
+        <img src="email.png" alt="Email :" class="contact-icon">
+        <a href="mailto:himasta.ung01@gmail.com">Email</a>
+      </div>
+
+      <div class="contact-card">
+        <img src="ig.jpg" alt="Instagram" class="contact-icon">
+        <a href="https://instagram.com/himasta_ung" target="_blank">Instagram</a>
+      </div>
+
+      <div class="contact-card">
+        <img src="ung.png" alt="Lokasi" class="contact-icon">
+        <a href="https://ung.ac.id/" target="_blank">Universitas Negeri Gorontalo</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 HIMASTA Universitas Negeri Gorontalo</p>
+</footer>
+
+
+
+<script src="script.js"></script>
+<!-- Modal Lightbox -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="modal-caption"></div>
+</div>
+
+</body>
+</html>
