@@ -77,4 +77,11 @@ function autoSlide() {
   document.getElementById("slide-img").src = slideImages[slideIndex];
 }
 
-setInterval(autoSlide, 3000); // ganti gambar tiap 3 detik
+setInterval(autoSlide, 6000); // ganti gambar tiap 3 detik
+
+
+
+
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}

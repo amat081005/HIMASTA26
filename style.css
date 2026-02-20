@@ -338,82 +338,48 @@ padding:20px;
 
 
 
-/* ========================================= */
-/* RESPONSIVE KHUSUS HP - TIDAK GANGGU DESKTOP */
-/* ========================================= */
+/* ================================= */
+/* HAMBURGER MENU MOBILE */
+/* ================================= */
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile */
 @media screen and (max-width: 768px) {
 
-  /* Header */
-  header {
-    padding: 15px 5%;
+  .menu-toggle {
+    display: block;
   }
 
   .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
   }
 
   .nav-menu {
-    flex-direction: column;
-    gap: 12px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #1e3a5f;
     width: 100%;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 0;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
   }
 
   .nav-menu li {
     width: 100%;
-  }
-
-  .nav-menu a {
-    display: block;
-    width: 100%;
-  }
-
-  /* Section */
-  .section {
-    padding: 70px 5%;
-  }
-
-  /* Hero */
-  .hero {
-    height: auto;
-    padding: 140px 20px 80px;
-  }
-
-  .hero-content h1 {
-    font-size: 22px;
-  }
-
-  .hero-logo {
-    width: 90px;
-  }
-
-  /* Semua grid jadi 1 kolom */
-  .card-grid,
-  .anggota-grid,
-  .gallery-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Slideshow */
-  .slideshow-container {
-    height: 250px;
-  }
-
-  .gallery-item img {
-    height: 200px;
-  }
-
-  /* Contact */
-  .contact-cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .contact-card {
-    width: 100%;
-    justify-content: center;
+    text-align: center;
   }
 
 }
