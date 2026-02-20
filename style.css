@@ -335,3 +335,85 @@ padding:20px;
 .gallery-item:hover img {
   transform: scale(1.1);
 }
+
+
+
+/* ========================================= */
+/* RESPONSIVE KHUSUS HP - TIDAK GANGGU DESKTOP */
+/* ========================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* Header */
+  header {
+    padding: 15px 5%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu a {
+    display: block;
+    width: 100%;
+  }
+
+  /* Section */
+  .section {
+    padding: 70px 5%;
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 140px 20px 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-logo {
+    width: 90px;
+  }
+
+  /* Semua grid jadi 1 kolom */
+  .card-grid,
+  .anggota-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Slideshow */
+  .slideshow-container {
+    height: 250px;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+
+  /* Contact */
+  .contact-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-card {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
