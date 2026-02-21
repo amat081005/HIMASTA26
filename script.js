@@ -101,3 +101,61 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
+
+
+
+/* ===== PROFILE MODAL KHUSUS PENGURUS ===== */
+
+function openProfile(role){
+
+  const modal = document.getElementById("profileModal");
+  if(!modal) return;
+
+  const name = document.getElementById("modalName");
+  const roleText = document.getElementById("modalRole");
+  const desc = document.getElementById("modalDesc");
+  const img = document.getElementById("modalImg");
+  const ig = document.getElementById("modalIg");
+
+  if(role === "ketua"){
+    name.innerText = "PUTRI KARTIKA ABDULLAH";
+    roleText.innerText = "Ketua HIMASTA";
+    desc.innerText = "Memimpin dan mengkoordinasikan seluruh kegiatan organisasi.";
+    img.src = "images/ketua.jpg";
+    ig.href = "https://instagram.com/milk.cki";
+  }
+
+  if(role === "sekretaris"){
+    name.innerText = "Nur Imam Mohammad";
+    roleText.innerText = "Sekretaris";
+    desc.innerText = "Mengelola administrasi dan dokumentasi organisasi.";
+    img.src = "imam.jpeg";
+    ig.href = "https://instagram.com/imam.mohmd";
+  }
+
+  if(role === "bendahara"){
+    name.innerText = "Arum Kusmawaty Yusuf";
+    roleText.innerText = "Bendahara";
+    desc.innerText = "Mengatur keuangan organisasi dan laporan keuangan.";
+    img.src = "arum.jpg";
+    ig.href = "https://instagram.com/arumysf_";
+  }
+
+  modal.style.display = "flex";
+}
+
+function closeProfile(){
+  const modal = document.getElementById("profileModal");
+  if(modal) modal.style.display = "none";
+}
+
+/* klik luar modal untuk tutup */
+document.addEventListener("click", function(e){
+  const modal = document.getElementById("profileModal");
+  if(modal && e.target === modal){
+    closeProfile();
+  }
+});
