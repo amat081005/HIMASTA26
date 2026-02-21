@@ -501,43 +501,33 @@ header {
   }
 
 }
-/* ================= REVEAL ANIMATION ================= */
+/* MODERN REVEAL */
+.reveal,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
 
 .reveal {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.8s ease;
+  transform: translateY(80px);
 }
 
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Variasi arah */
 .reveal-left {
-  opacity: 0;
-  transform: translateX(-60px);
-  transition: all 0.8s ease;
-}
-
-.reveal-left.active {
-  opacity: 1;
-  transform: translateX(0);
+  transform: translateX(-80px);
 }
 
 .reveal-right {
-  opacity: 0;
-  transform: translateX(60px);
-  transition: all 0.8s ease;
+  transform: translateX(80px);
 }
 
+.reveal.active,
+.reveal-left.active,
 .reveal-right.active {
   opacity: 1;
-  transform: translateX(0);
+  transform: translate(0,0);
 }
 
-/* Delay bertahap */
 .delay-1 { transition-delay: 0.2s; }
 .delay-2 { transition-delay: 0.4s; }
 .delay-3 { transition-delay: 0.6s; }
