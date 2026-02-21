@@ -1,133 +1,150 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HIMASTA - Universitas Negeri Gorontalo</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website resmi Himpunan Mahasiswa Statistika Universitas Negeri Gorontalo">
+  <meta name="keywords" content="HIMASTA, Statistika, UNG, Universitas Negeri Gorontalo">
+  <meta name="author" content="HIMASTA UNG">
+
+  <title>HIMASTA - Universitas Negeri Gorontalo</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<script>
-function revealOnScroll() {
-  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-
-  for (let i = 0; i < reveals.length; i++) {
-    let windowHeight = window.innerHeight;
-    let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 100;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
-</script>
 <body>
 
-<header id="navbar">
+<header>
   <div class="nav-container">
-
     <div class="logo-area">
-      <img src="logo.jpg" class="logo-img">
+      <img src="logo.jpg" alt="Logo HIMASTA">
       <h1>HIMASTA</h1>
     </div>
-
-    <!-- Hamburger -->
-    <div class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#Tentang">Tentang</a></li>
-      <li><a href="#pengurus">Pengurus</a></li>
-      <li><a href="#divisi">Divisi</a></li>
-      <li><a href="#galeri">Galeri</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-    </ul>
-
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Tentang">Tentang</a></li>
+        <li><a href="#pengurus">Pengurus</a></li>
+        <li><a href="#divisi">Divisi</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-bg"></div> <!-- background foto / slideshow -->
-  <div class="hero-overlay"></div> <!-- overlay gelap agar teks terlihat -->
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-content">
-   
     <img src="ung.png" alt="Logo UNG" class="hero-logo">
     <h1>Himpunan Mahasiswa Statistika</h1>
     <p><b>Universitas Negeri Gorontalo</b></p>
   </div>
 </section>
 
-<section class="section light reveal" id="Tentang">
-<div class="card reveal-left delay-1">
-    <h1>Pengertian & Sejarah HIMASTA</h1>
-
-    <p>
-     Himpunan Mahasiswa Statistika (HIMASTA) adalah organisasi kemahasiswaan intra kampus yang berkedudukan di Program Studi Statistika, Jurusan Matematika, FMIPA Universitas Negeri Gorontalo. Berdiri sejak 31 Mei 2016, HIMASTA berfungsi sebagai wadah sentral pengembangan dan pergerakan mahasiswa yang bersifat fleksibel, adil, dan berlandaskan asas kekeluargaan.
-    </p>
-
-    <p>
-Organisasi ini dibentuk dengan visi utama untuk membina kesadaran spiritual, emosional, dan intelektual anggotanya. Sebagai representasi pemerintahan mahasiswa di tingkat program studi, HIMASTA berkomitmen menciptakan insan akademis yang unggul, inovatif, dan berbudaya, sembari tetap menjunjung tinggi nilai-nilai Tridharma Perguruan Tinggi demi mewujudkan integritas kepribadian mahasiswa sebagai generasi penerus bangsa.
-    </p>
+<!-- TENTANG -->
+<section class="section tentang-premium" id="Tentang">
+  <div class="container">
+    <div class="tentang-header center reveal">
+      <h2>Tentang HIMASTA</h2>
+      <p>Organisasi Mahasiswa Statistika yang Progresif dan Berintegritas</p>
+    </div>
+    <div class="tentang-grid">
+      <div class="tentang-text reveal-left">
+        <div class="highlight-box">
+          <h3>Berdiri Sejak 31 Mei 2016</h3>
+          <p>HIMASTA adalah organisasi kemahasiswaan Program Studi Statistika 
+          yang menjadi wadah pengembangan intelektual, spiritual, dan profesional mahasiswa.</p>
+        </div>
+        <p>Sebagai representasi mahasiswa tingkat program studi, HIMASTA 
+        berkomitmen membangun insan akademis yang unggul, inovatif, 
+        dan berdaya saing.</p>
+      </div>
+      <div class="tentang-stats reveal-right">
+        <div class="stat-box"><h3>2016</h3><p>Tahun Berdiri</p></div>
+        <div class="stat-box"><h3>4</h3><p>Divisi Aktif</p></div>
+        <div class="stat-box"><h3>18</h3><p>Pengurus</p></div>
+        <div class="stat-box"><h3>100+</h3><p>Anggota</p></div>
+      </div>
+    </div>
+    <div class="timeline-modern reveal">
+      <div class="timeline-item">
+        <div class="circle"></div>
+        <div class="timeline-content">
+          <h4>2016 - Pendirian</h4>
+          <p>HIMASTA resmi dibentuk sebagai organisasi mahasiswa Statistika.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="circle"></div>
+        <div class="timeline-content">
+          <h4>2020 - Pengembangan Program</h4>
+          <p>Mulai aktif dalam kegiatan akademik dan pengembangan IPTEK.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="circle"></div>
+        <div class="timeline-content">
+          <h4>2024 - Transformasi Digital</h4>
+          <p>Memasuki era digitalisasi dan penguatan identitas organisasi.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nilai-section center reveal">
+      <h3>Nilai & Komitmen HIMASTA</h3>
+      <div class="nilai-grid">
+        <div class="nilai-card">Integritas</div>
+        <div class="nilai-card">Kolaborasi</div>
+        <div class="nilai-card">Inovasi</div>
+        <div class="nilai-card">Profesionalisme</div>
+      </div>
+    </div>
   </div>
 </section>
 
-
-<!-- visi misi-->
-
-
-<section class="section light reveal">
-  <div class="container center">
-
-    <h1 class="reveal">Visi</h1>
-    <p class="reveal delay-1">
-      Menjadi organisasi mahasiswa statistika yang unggul...
-    </p>
-
-    <h1 class="reveal delay-2">Misi</h1>
-    <ul class="misi reveal delay-3">
-      <li>Meningkatkan kualitas akademik mahasiswa.</li>
-      <li>Mengembangkan kepemimpinan dan soft skill.</li>
-      <li>Mendorong prestasi dan kolaborasi nasional.</li>
-    </ul>
-
+<!-- VISI MISI / AI SECTION -->
+<section class="section ai-section" id="visiMisi">
+  <div class="mouse-glow"></div>
+  <div class="container">
+    <h1 class="ai-title"><span id="typing"></span></h1>
+    <div class="ai-grid">
+      <div class="ai-card">
+        <h2>VISION</h2>
+        <p>Menjadi organisasi mahasiswa statistika yang unggul,
+        inovatif, dan berdaya saing global dalam pengembangan
+        akademik serta profesionalisme berbasis data.</p>
+      </div>
+      <div class="ai-card">
+        <h2>MISSION</h2>
+        <ul>
+          <li>Meningkatkan kualitas akademik mahasiswa.</li>
+          <li>Mengembangkan kepemimpinan dan soft skill.</li>
+          <li>Mendorong prestasi dan kolaborasi nasional.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- PENGURUS INTI -->
+<!-- PENGURUS -->
 <section class="section reveal" id="pengurus">
   <div class="container">
-    <h1 class="center">PENGURUS</h1>
-
+    <h1 class="center">Pengurus</h1>
     <div class="card-grid">
-
       <div class="card anggota" onclick="openModal('images/ketua.jpg','PUTRI KARTIKA ABDULLAH','Ketua Himpunan')">
-        <img src="images/ketua.jpg" alt="Ketua">
-        <h3>PUTRI KARTIKA ABDULLAH</h3>
-        <p>Ketua Himpunan</p>
+        <img src="images/ketua.jpg" alt="Ketua"><h3>PUTRI KARTIKA ABDULLAH</h3><p>Ketua Himpunan</p>
       </div>
-
       <div class="card anggota" onclick="openModal('imam.jpeg','Nur Imam Mohammad','Sekretaris')">
-        <img src="imam.jpeg" alt="Sekretaris">
-        <h3>Nur Imam Mohammad</h3>
-        <p>Sekretaris</p>
+        <img src="imam.jpeg" alt="Sekretaris"><h3>Nur Imam Mohammad</h3><p>Sekretaris</p>
       </div>
-
-      <div class="card anggota" onclick="openModal('aru,m.jpg','Arum Kusmawaty Yusuf','Bendahara')">
-        <img src="arum.jpg" alt="Bendahara">
-        <h3>Arum Kusmawaty Yusuf</h3>
-        <p>Bendahara</p>
+      <div class="card anggota" onclick="openModal('arum.jpg','Arum Kusmawaty Yusuf','Bendahara')">
+        <img src="arum.jpg" alt="Bendahara"><h3>Arum Kusmawaty Yusuf</h3><p>Bendahara</p>
       </div>
-
     </div>
   </div>
 </section>
@@ -159,9 +176,9 @@ Organisasi ini dibentuk dengan visi utama untuk membina kesadaran spiritual, emo
           <p>Anggota</p>
         </div>
       </div>
-
+      <h3>Program Kerja</h3>
       <ul class="proker">
-        <li> --- </li>
+        <li> GBK (Gerakan Berbagi Kebaikan) </li>
         <li> --- </li>
         <li> --- </li>
       </ul>
@@ -193,7 +210,7 @@ Organisasi ini dibentuk dengan visi utama untuk membina kesadaran spiritual, emo
           <p>Anggota</p>
         </div>
       </div>
-
+      <h3>Program Kerja</h3>
      <ul class="proker">
         <li> --- </li>
         <li> --- </li>
@@ -227,7 +244,7 @@ Organisasi ini dibentuk dengan visi utama untuk membina kesadaran spiritual, emo
           <p>Anggota</p>
         </div>
       </div>
-
+      <h3>Program Kerja</h3>
       <ul class="proker">
         <li> --- </li>
         <li> --- </li>
@@ -257,15 +274,13 @@ Organisasi ini dibentuk dengan visi utama untuk membina kesadaran spiritual, emo
           <p>Anggota</p>
         </div>
      
-
-
         <div class="anggota" onclick="openModal('amat.jpg','Rahmat Maulana Umar','Anggota')">
           <img src="amat.jpg">
           <h4>Rahmat Maulana Umar</h4>
           <p>Anggota</p>
         </div>
       </div>
-
+      <h3>Program Kerja</h3>
       <ul class="proker">
         <li> --- </li>
         <li> --- </li>
@@ -352,13 +367,13 @@ Organisasi ini dibentuk dengan visi utama untuk membina kesadaran spiritual, emo
 
 
 
-<script src="script.js"></script>
-<!-- Modal Lightbox -->
+<!-- MODAL -->
 <div id="modal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
   <img class="modal-content" id="modal-img">
   <div id="modal-caption"></div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
