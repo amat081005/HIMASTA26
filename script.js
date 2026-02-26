@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ===== TYPING EFFECT ===== */
   const typingEl = document.getElementById("typing");
   if(typingEl){
-    const text="VISION & MISSION"; let i=0;
+    const text="VISI & MISI"; let i=0;
     const typing = ()=>{ if(i<text.length){ typingEl.innerHTML+=text[i++]; setTimeout(typing,70); } };
     typing();
   }
